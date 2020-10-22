@@ -1,0 +1,45 @@
+//
+
+
+skLearn을 이용한 계층 분석 모델 구현
+개념을 잡았으면 실제로 계층 분석 모델을 구현해보자.
+
+데이타는 K Means에서 사용했던 IRIS 데이타를 똑같이 사용한다.
+
+이번에는 4개의 피쳐를 이용해서 사용한다. 
+
+
+
+from sklearn import datasets
+import pandas as pd
+iris = datasets.load_iris()
+
+labels = pd.DataFrame(iris.target)
+labels.columns=['labels']
+data = pd.DataFrame(iris.data)
+data.columns=['Sepal length','Sepal width','Petal length','Petal width']
+data = pd.concat([data,labels],axis=1)
+
+
+
+다음은 IRIS 데이타를 이용하여 dendrogram을 그려보자
+
+# Perform the necessary imports
+from scipy.cluster.hierarchy import linkage, dendrogram
+import matplotlib.pyplot as plt
+
+# Calculate the linkage: mergings
+mergings = linkage(data,method='complete')
+
+# Plot the dendrogram, using varieties as labels
+plt.figure(figsize=(40,20))
+dendrogram(mergings,
+           labels = labels.as_matrix(columns=['labels']),
+           leaf_rotation=90,
+           leaf_font_size=20,
+)
+plt.show()
+
+
+
+출처: https://bcho.tistory.com/1204?category=555440 [조대협의 블로그]
