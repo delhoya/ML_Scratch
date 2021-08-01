@@ -1,6 +1,4 @@
-<script type="text/javascript" 
-src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
-</script>
+
 
 [마크다운 연습](https://github.com/zeuseyera/Markdown_TongDal-kr)
 https://github.com/zeuseyera/Markdown_TongDal-kr
