@@ -3,13 +3,15 @@
 https://github.com/zeuseyera/Markdown_TongDal-kr
 [마크다운 연습](https://github.com/zeuseyera/Markdown_TongDal-kr)
 
+https://www.codecogs.com/latex/eqneditor.php
+
 
 ## Binomial Distribution
 ---
 
 ### 1-2. MLE
 
-- Maximum likeli
+- Maximum likelihood Estimation 
   * 히연이는 내사랑 커비
   * 내팔 무는 커비 
   * 커비는 뭔가 알려주려고 했지만
