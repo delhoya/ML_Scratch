@@ -1,4 +1,7 @@
 
+
+https://github.com/zeuseyera/Markdown_TongDal-kr
+
 ## Binomial Distribution
 ---
 
