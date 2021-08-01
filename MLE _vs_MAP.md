@@ -1,8 +1,6 @@
 
 
 https://github.com/zeuseyera/Markdown_TongDal-kr
-
-
 [마크다운 연습](https://github.com/zeuseyera/Markdown_TongDal-kr)
 
 
