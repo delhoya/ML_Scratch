@@ -4,4 +4,5 @@
 
 ### 1-2. MLE
 
-Maximum likeli         
+- Maximum likeli
+  * ㄴㅇ         
