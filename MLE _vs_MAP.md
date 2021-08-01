@@ -18,6 +18,6 @@ print(커비야 안녕)
 
 ![커비](https://pbs.twimg.com/media/Ea8xQs5U8AAZeTG.png)
 
-```
+
 <a href="https://www.codecogs.com/eqnedit.php?latex=ax&plus;b&space;=&space;1" target="_blank"><img src="https://latex.codecogs.com/gif.latex?ax&plus;b&space;=&space;1" title="ax+b = 1" /></a>
-```
+
