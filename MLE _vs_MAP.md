@@ -17,6 +17,8 @@ https://www.codecogs.com/latex/eqneditor.php
   * <a href="https://www.codecogs.com/eqnedit.php?latex=\Theta" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\Theta" title="\Theta" /></a> 가 주어졌을때 지정된 사건이 일어날 확률
   * Binomial ditribution 은 인정 Theta를 최적화 하는 방향으로 진행 
   * Maximum likelihood estimation - Theta 최적화 argument 찾기 (미분 진행)
+  * \[a_h\ln \Theta +a_r\ln (1-\Theta )\]
+
   * <a href="https://www.codecogs.com/eqnedit.php?latex=\Theta&space;_h&space;=&space;a_h&space;/&space;a_h&space;&plus;&space;a_r" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\Theta&space;_h&space;=&space;a_h&space;/&space;a_h&space;&plus;&space;a_r" title="\Theta _h = a_h / a_h + a_r" /></a>
   
 
