@@ -1,10 +1,9 @@
 
 
 [마크다운 연습](https://github.com/zeuseyera/Markdown_TongDal-kr)
-
-
 https://github.com/zeuseyera/Markdown_TongDal-kr
 
+수식 연습
 https://www.codecogs.com/latex/eqneditor.php
 
 
