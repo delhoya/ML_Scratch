@@ -10,6 +10,9 @@
   * 커비는 뭔가 알려주려고 했지만
   * 포기한 커비 
   * 
+
 ```
-print((hi)
+print(커비야 안녕)
 ```
+
+![img](http://i.imgur.com/yourfilename.png)
