@@ -13,7 +13,7 @@ https://www.codecogs.com/latex/eqneditor.php
 ### 1-2. MLE
 
 - Maximum likelihood Estimation 
-  * 히연이는 내사랑 커비
+  * <a href="https://www.codecogs.com/eqnedit.php?latex=P(D|\Theta&space;)&space;=\Theta&space;^a_h(1-\Theta&space;)^a_r" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(D|\Theta&space;)&space;=\Theta&space;^a_h(1-\Theta&space;)^a_r" title="P(D|\Theta ) =\Theta ^a_h(1-\Theta )^a_r" /></a>
   * 내팔 무는 커비 
   * 커비는 뭔가 알려주려고 했지만
   * 포기한 커비 
