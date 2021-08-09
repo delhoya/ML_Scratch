@@ -39,7 +39,6 @@ print(커비야 안녕)
 
 
 
-$$ \[a_h\ln \Theta +a_r\ln (1-\Theta )\]
 
 
 
