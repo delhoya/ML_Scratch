@@ -325,7 +325,17 @@
         + C(공분산행렬) 의 고유값 분해 진행 S*A*S_transpose()
         + 고유벡터 : 주성분 벡터 (분포에서 분산이 큰 방향)
         + 고유값 : 분산의 크기
-      
+  
+ + 순서요약
+    + 데이터 정규화 (mean clustering)
+    + 공분산 행렬 계산 
+    + 공분산 행렬에서 eigenvalue 및 eigenvector 계산
+    + 고유값 순서대로 나열 
+    + 정렬된 고유값을 토대로 기존 변수를 변환
+      + Z1 = e(1)X = e11*x1 + e12*x2 + ...
+      + Z2 = e(2)X = e21*x1 + e22*x2 + ...
+      + ...  
+   
   + HMM 
     + Class A and Class B : 2개의 Sequence 가 있을 때 사용하는 모델 
       
@@ -341,8 +351,8 @@
         + (Pi A) * P(A2|A1) * P (A3|A2) * ... 표현가능
         
       + 1. 모델이 주어졌을때 Output Sequence 확률 ? = forward로 곱연산 
-      + 2. 주어진 모델과 관측에 대해서 State 의 Path? = Highest Prob. (maximize)
-      + 3. 데이터가 주어졌을때(O) 가장 잘되는 모델? = Expectation and Maximize 
+      + 2. 주어진 모델과 관측에 대해서 hidden State 의 Path? = Highest Prob. (maximize)
+      + 3. 데이터가 주어졌을때(O) 가장 잘되는 모델 찾기 ? = Expectation and Maximize 
       
         + Evaluation , (신호가 어디에서 왔는가?) : 
         + Decoding , (Word 에서 형태소 POS 분석하는것)  : 
