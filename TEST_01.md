@@ -27,18 +27,31 @@
         + 다른 거리 측정법? : 코사인 유사도 , 피어슨 correlation .., etc 
         + https://dive-into-ds.tistory.com/46
          
-
+    + 생각 해볼 것
+      + Which k is better?
+        + Small k : higher variance (less stable)
+        + Large k : higher bias (less precise)   
+      
+      + Proper choice of k
+        + Depending on the data
+        + Use Cross-validation
+        
 + 2주차 강의  
   
   + Linear regression
-    + W vector (w0,w1,w2....wn) 찾기   
-    + X vector (X1,X2,......Xn)
-    + loss function : MSE(Mean Squared Error)
-  
-  + how to ? : 모든 W에 대해서 편미분 진행 (variable와 같은 갯수 equations 생성)   
-  + solve ? : 식을 전개한것을 matrix 에 적용 w = A-1*B 적용
-  
-  + w = (XtX) -1 * (XtY)  (X transpose() )
+    
+    + Argmin |F(x)-y|    
+      + F(X) = W0 + W1X1 + W2X2 + ... + WnXn  
+      + W vector (w0,w1,w2....wn) 찾기   
+      + loss function : MSE(Mean Squared Error)
+        + (F(x)-y)^2 W에 대해 미분 진행 
+      
+  + how to ? : 모든 W1...Wn에 대해서 편미분 진행 (variable와 같은 갯수 equations 생성)   
+  + solve ? : matrix 에 적용 w = A-1*B 적용
+    + A : X and B : Y  
+    + 행렬식 : A : XtX and B : XtY
+    
+  + w = (XtX) -1 * (XtY)  
   
     + linear regression matrix form (단순선형회귀분석 / 정규방정식)
       + https://jangpiano-science.tistory.com/111
