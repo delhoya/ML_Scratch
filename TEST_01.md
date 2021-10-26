@@ -1,8 +1,13 @@
 
 + 1주차 강의 
   
-  + K Nearest neighbors  
-  
+  + K Nearest neighbors : 
+    + 특징
+      + Distance 기반 (Instance-based learning) 
+      + Instance-based : 관측치만을 이용하여 새로운 데이터 예측
+      + Memory-based : 모든 학습데이터 메모리에 저장
+      + Lazy learning : 모델 학습 X 
+    
     + classification
       + 데이터가 주어졌을때 어떤 class에 속해있나? 
       + 가장 가까운 친구 찾기 나는 누구인가 - 유유상종 알고리즘 
@@ -42,22 +47,30 @@
     
     + Argmin |F(x)-y|    
       + F(X) = W0 + W1X1 + W2X2 + ... + WnXn  
-      + W vector (w0,w1,w2....wn) 찾기   
-      + loss function : MSE(Mean Squared Error)
-        + (F(x)-y)^2 W에 대해 미분 진행 
-      
-  + how to ? : 모든 W1...Wn에 대해서 편미분 진행 (variable와 같은 갯수 equations 생성)   
-  + solve ? : matrix 에 적용 w = A-1*B 적용
-    + A : X and B : Y  
-    + 행렬식 : A : XtX and B : XtY
-    
-  + w = (XtX) -1 * (XtY)  
+      + W vector (W0,W1,W2....Wn) 찾기   
+        + MSE(Mean Squared Error)
+          + (F(x)-y)^2 
   
-    + linear regression matrix form (단순선형회귀분석 / 정규방정식)
+  + how to ? : 모든 W1...Wn에 대해서 편미분 진행 
+    + variable와 같은 갯수 equations 생성   
+  + solve ? : 
+    
+    + Y : 반응변수 벡터 (n*1) 
+    + X : 설명변수 행렬 (n * (p+1)) why p+1 = W0 항 
+    + B : 회귀계수 벡터 ((p+1) * 1) why p+1 = W0 항
+ 
+       + 최소제곱법의 추정  
+    + matrix 에 적용 w = A-1*B 적용
+    + A : XtX and B : XtY
+    + w = (XtX) -1 * (XtY)  
+      + https://mazdah.tistory.com/831  
+  
+    + 다중 선형회귀 (정규방정식)
       + https://jangpiano-science.tistory.com/111
-      +  https://mazdah.tistory.com/831 
     
     + kernel regression matrix (일반화) 
+      + (XtX) -1 가 존재하지 않을때 계산이 불가능한 단점
+      + X : Kernel Trick mapping  
       + https://analysisbugs.tistory.com/163   
   
   + Another solving : Gradient descendant , Maximum likelyhood 
@@ -69,53 +82,47 @@
       + https://deep-learning-study.tistory.com/623
 
 + 3주차 강의 
-  + Minimizes the error (Gradient Descendant) vs maximizes the probability (Maximum likelyhood)
+  + Square mean error vs Maximizes the probability 
   
-  + MLE : 
-    +  Linear 모델을 가지고 데이터 D 가 가장 fit (maximize) 확률로 접근 
-    +  weight 와 Standard Deviation 이 주어질때 데이터(D)의 X,Y 좌표 : P(x,y|w,s)
+  + Maximum likelyhood : (MLE) 
+    +  데이터 D 가 가장 fit (maximize) 확률?
+    +  weight 와 Standard Deviation 이 주어질 때 데이터(D)의 X,Y 좌표 : P(x,y|w,s)
         + Noise 가 정규분포를 띈다고 가정?   
-        + Y와 X는 확률 곱법칙으로 분리가능
-        + X 와 w,s 는 독립이다 (Conditional proabability 의 chain rule 적용 시)  
-        + 최종적으로 loss 함수형태 유도 가능 
+        + Y와 X는 확률 곱 법칙으로 분리가능 
+        + X 와 w,s 는 독립이다 (Conditional proabability) (chain rule 적용)  
+        + 최종적으로 SLE와 MLE 는 같음 
   
   + Logisitic regression 
-    
-    + Soft version of linear classifier (Using Exponential Fuction)  
-      + 모 아니면 도 (0/1)같은 형태가 아니라 soft 한 형태의 classifier 구현가능
-    
+        
     + 함수 
       + Sigmoid fuction : 나오는 값 0 ~ 1 사이 (확률값을 Regression 하려는 용도) 
-
     + 오즈비 
       + 승산 (성공확률 P / 실패확률 1-P) 
-    
+  
     + Logit Transform
       + log(odds) = log(p/1-p) = log(sigmoid p / 1-sigmoid) 
       + 로그 - 우도함수 (log likelywood function) 
       + 입력변수 1 단위 증가할때 log(odds) 의 변화량 
-    
-    + Cross Entropy 
-      + 엔트로피(불확실성) 최소화 찾기
-     
+      + W에 대해 미분 적용 
       
-  
+     
   + Naïve Bayesian
     
     + Naïve Bayesian Classifier
       + Probability with the strongest assumption on independence 
-    + Formal Description of NBC
-      
+      + 조건부 확률 계산
+        + https://gomguard.tistory.com/69  
+
     
 + 4주차 강의 
   
-  + Constrained(제한적조건) Optimization (for SVM)
-
++ Constrained(제한적조건) Optimization (for SVM)
 + SVM (Support vector machine) + Kernel 
 
 + Constrained Optimizaion (제한된 조건에서의 최적화)
   + min f(x) =?  
   + when g(x) = 0 and h(x) <= 0     
+ 
 + Lagrange Function (라그랑주 승수법)
   + F(x,a,b) = f(x) + sum(a*g(x)) + sum(b*h(x))   
   + min x / max a,b
@@ -154,29 +161,28 @@
   + 마진을 최대화 하는 Boundary !
   
   + 마진을 계산하는법?
-    + 직선식 wx+b=0 , wx+b > 0 , wx+b < 0 (w,b 찾기)
-     + wx+b =1 , wx+b = 0 ,  wx+b = -1  
-     + 두 직선사이의 거리 계산 (수직인 직선에서 직선들이 만나는 점들의 거리)
-       + 직선위의 한점 a,b 일때 W(a-b) = 0    
-       + OX+ and OX- vector 가정 (가장 단순하게 법선 벡터와 평행한)
-       + 1. |X+ - X-| = M   
-       + 2.  X+ = X- + a * w (w벡터방향) (:상수) 
+     + 직선식 wtx+b =1 , wtx+b = 0 ,  wtx+b = -1  (wt : W transpose())
+     + 두 직선사이의 거리 계산 
+        
+       + OX+ and OX- vector 가정 (원점에서 출발 직선위에 있는 벡터) 
+       + 1. |X+ - X-| = M  (마진크기) 
+       + 2.  X+ = X- + a * w  (a:상수) 
        + 1과 2식을 조합하면
          + |X+ - X-| = M  = a|w|
-            + wx+b = 1 식에다가 x+ = x- + aw 대입 
-            + w(x- + a*w) + b = 1 
-            + 전개하면 wx- + a*w*w+b = 1
-            + 정리하면 a = 2/w*w (wx- + b = -1 대입)
-            + w*w = |w| 이므로 (거리) 
+            + wt*x+b = 1 식에다가 x+ = x- + aw 대입 
+            + wt(x- + a*w) + b = 1 
+            + 전개하면 wt*x- + a*wt*w+b = 1
+            + 정리하면 a = 2/wt*w (wtx- + b = -1 대입)
+            + wt*w = |w| 이므로 
             + m = 2/|w|
    + w가 0으로 갈때 margin 이 max
    + 포인트,label에 따라서 constraint 식 추가 가능
    
     + 예시 : wx+b >1 , wx+b<-1 
     + 예시 : D = (1,1,-1) ,(2,2,+1)
-      + min 0.5(w1^2+22^2) 
+      + min 0.5(w1^2+x2^2) 
       + subject to (w1+w2+b+1 <=0 and -2w1-2w2-b+1<=0)
-      + F = 0.5(w1^2+22^2) + a(w1+w2+b+1) + a2(-2w1-2w2-b+1)
+      + F = 0.5(w1^2+x2^2) + a(w1+w2+b+1) + a2(-2w1-2w2-b+1)
       + 만족하는 식 :
       + x1 , x2에 대해서 각각 미분한식을 만족 + 4개의 추가 조건 획득  
         + case1 a1 = 0 a2 = 0  
