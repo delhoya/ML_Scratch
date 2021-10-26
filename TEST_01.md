@@ -80,18 +80,32 @@
         + 최종적으로 loss 함수형태 유도 가능 
   
   + Logisitic regression 
-    + Sigmoid fuction : 나오는 값 0 ~ 1 사이 (확률과 비슷) 
+    
     + Soft version of linear classifier (Using Exponential Fuction)  
       + 모 아니면 도 (0/1)같은 형태가 아니라 soft 한 형태의 classifier 구현가능
-      +      
+    
+    + 함수 
+      + Sigmoid fuction : 나오는 값 0 ~ 1 사이 (확률값을 Regression 하려는 용도) 
 
+    + 오즈비 
+      + 승산 (성공확률 P / 실패확률 1-P) 
+    
+    + Logit Transform
+      + log(odds) = log(p/1-p) = log(sigmoid p / 1-sigmoid) 
+      + 로그 - 우도함수 (log likelywood function) 
+      + 입력변수 1 단위 증가할때 log(odds) 의 변화량 
+    
+    + Cross Entropy 
+      + 엔트로피(불확실성) 최소화 찾기
+     
+      
   
   + Naïve Bayesian
     
     + Naïve Bayesian Classifier
       + Probability with the strongest assumption on independence 
     + Formal Description of NBC
-      + 
+      
     
 + 4주차 강의 
   
