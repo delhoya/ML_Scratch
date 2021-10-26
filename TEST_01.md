@@ -115,6 +115,7 @@
 
     
 + 4주차 강의 
+
   
 + Constrained(제한적조건) Optimization (for SVM)
 + SVM (Support vector machine) + Kernel 
@@ -153,8 +154,6 @@
   
 + 결과 정리 : kkt multiplier 수에 따라서 최악에는 2^p 의 subproblem 이 있을 수 있음 
 
-+ Dual form SVM
-+ min x and max a ,b = max a,b and min x 로 변경가능 
 
 + Support Vector Machine
   + 직선을 하나 그려서 Boundary 를 지정하고 싶다. 어떤식으로 선을 그어야 할까?
@@ -162,7 +161,9 @@
   
   + 마진을 계산하는법?
      + 직선식 wtx+b =1 , wtx+b = 0 ,  wtx+b = -1  (wt : W transpose())
-     + 두 직선사이의 거리 계산 
+     + 두 직선사이의 거리 계산  
+        + L2 norm 
+          + |w| = (root)(w1^2+w2^2+ ...wn^2) = root (W*W_transpose())  
         
        + OX+ and OX- vector 가정 (원점에서 출발 직선위에 있는 벡터) 
        + 1. |X+ - X-| = M  (마진크기) 
@@ -175,35 +176,51 @@
             + 정리하면 a = 2/wt*w (wtx- + b = -1 대입)
             + wt*w = |w| 이므로 
             + m = 2/|w|
-   + w가 0으로 갈때 margin 이 max
-   + 포인트,label에 따라서 constraint 식 추가 가능
+   
+   + |w|가 0으로 갈때 margin 이 max
+     + min 0.5|w| 의 값을 계산하는 것
+     + constraint(제약식) 추가 가능
    
     + 예시 : wx+b >1 , wx+b<-1 
     + 예시 : D = (1,1,-1) ,(2,2,+1)
       + min 0.5(w1^2+x2^2) 
       + subject to (w1+w2+b+1 <=0 and -2w1-2w2-b+1<=0)
-      + F = 0.5(w1^2+x2^2) + a(w1+w2+b+1) + a2(-2w1-2w2-b+1)
-      + 만족하는 식 :
+        + F = 0.5(w1^2+x2^2) + a(w1+w2+b+1) + a2(-2w1-2w2-b+1)
+    + 만족하는 식 :
       + x1 , x2에 대해서 각각 미분한식을 만족 + 4개의 추가 조건 획득  
         + case1 a1 = 0 a2 = 0  
         + case2 ,case3 case4 ... 에 따라서 case 별로 대입해보기 
 
-+ Dual foam 변형
-  + pass
++ Dual form SVM
+  
+  + L(W,b,a)
+ 
+  + 식 0.5w*wt 에서
+    + L(w,b,a)를 w에 대한 미분식 sigma (a_i * y_i * x_i)대입
+      + 변형된 식 0.5*sigma_sigma(a_i*a_j*y_i*y_j*x*x_transpose)
+      
+  + Constraint 식 a_i(y_i(w_t*x_i+b)-1) 에서 
+    + L(w,b,a) 를 b에 대한 미분식 sigma (a_i*y_i) = 0     
+    + L(w,b,a) 를 w에 대한 미분식 w = sigma (a_i*y_i*x_i) 
+      + 변형된 식 -sigma_sigma(a_i*a_j*y_i*y_j*x*x_transpose) + sigma a_i
+  
+  + 이제 a만 구하면 되는 dual form 으로 변형 완성
+
++ Soft-Margin SVM
+  + 0.5|w|^2 + C*sigma ksi
+  + ksi 를 도입 (slack variable / Training error 허용)
   
 + Non-linear SVM
   + 데이터를 고차원으로 mapping      
   + equality constraint , inequality constraint 
-  + data X -> O(x)
-  + inner product 
+  + data X -> O(x) 로 변경 (예시 Xt*X -> O(X)t * O(x) 로 변형)
 
 + Kernel trick
-+ 커널을 이용하여 mapping = inner product 줄이기? 
-  + (x1*x2+1)^3 으로 간단하게 표헌가능 !
+  + 커널을 이용하여 mapping = inner product 줄이기? 
+    + (x1*x2+1)^3 으로 간단하게 표헌가능 !
   + 간단하게 만드는 커널 Transform 형태 (연산수 줄이기)    
-
-+ 커널은 뭐가 될수있어?
-  + Mercer's condition 만족  
+  + 커널은 뭐가 될수있어?
+    + Mercer's condition 만족  
 
 6주차 - 10/4(월) 
 
