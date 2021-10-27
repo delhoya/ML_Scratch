@@ -46,19 +46,22 @@
   + Linear regression
   
   + 다중 선형회귀 : 여러개 독립변수 (X1,...,Xn) 다른 가중치(W1,...Wn) , 여러개의 종속변수 (Y1,...,Yn)
-    + Argmin |F(x)-y|    
-      + F(X) = W0 + W1X1 + W2X2 + ... + WnXn  
-      + W vector (W0,W1,W2....Wn) 찾기   
-        + MSE(Mean Squared Error)
-          + (F(x)-y)^2 
+  + http://piramvill2.org/?p=3224&
   
   + how to ? : 모든 W1...Wn에 대해서 편미분 진행 
     + variable와 같은 갯수 equations 생성   
   + solve ? : 
     
     + Y : 반응변수 벡터 (n*1) 
-    + X : 설명변수 행렬 (n * (p+1)) why p+1 = W0 항 
-    + B : 회귀계수 벡터 ((p+1) * 1) why p+1 = W0 항
+    + X : 설명변수 행렬 (n * (p+1)) 
+    + B : 회귀계수 벡터 ((p+1) * 1)
+    + e : 잔차 벡터 (n*1)
+  
+  + Argmin |F(x)-y|    
+      + F(X) = W0 + W1X1 + W2X2 + ... + WnXn  
+      + W vector (W0,W1,W2....Wn) 찾기   
+        + MSE(Mean Squared Error)
+          + (F(x)-y)^2 
  
        + 최소제곱법의 추정  
     + matrix 에 적용 w = A-1*B 적용
