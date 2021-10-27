@@ -45,7 +45,7 @@
   
   + Linear regression
   
-  + 다중 선형회귀 : 여러개 독립변수 (X1,...,Xn) 다른 가중치(W1,...Wn)
+  + 다중 선형회귀 : 여러개 독립변수 (X1,...,Xn) 다른 가중치(W1,...Wn) , 여러개의 종속변수 (Y1,...,Yn)
     + Argmin |F(x)-y|    
       + F(X) = W0 + W1X1 + W2X2 + ... + WnXn  
       + W vector (W0,W1,W2....Wn) 찾기   
