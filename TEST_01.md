@@ -101,6 +101,7 @@
         + Y와 X는 확률 곱 법칙으로 분리가능 
         + X 와 w,s 는 독립이다 (Conditional proabability) (chain rule 적용)  
         + 최종적으로 SLE와 MLE 는 같음 
+        + https://ko.d2l.ai/chapter_deep-learning-basics/linear-regression.html
   
   + Logisitic regression 
         
@@ -113,7 +114,7 @@
       + log(odds) = log(p/1-p) = log(sigmoid p / 1-sigmoid) 
       + 로그 - 우도함수 (log likelywood function) 
       + 입력변수 1 단위 증가할때 log(odds) 의 변화량 
-      + W에 대해 미분 적용 
+      + 회귀계수 W에 대해 미분 적용 
       
      
   + Naïve Bayesian
