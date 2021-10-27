@@ -43,10 +43,15 @@
         
 + 2주차 강의  
   
+  + Regression Model :
+    + 회귀 모델에서 우리가 추정해야 하는 미지수는 독립 변수나 종속 변수가 아니라 회귀 계수 
+    + 회귀 모델은 모델링 대상을 회귀 계수의 선형 결합만으로 표현할 것인지 여부에 따라 ‘선형’ 회귀 모델과 ‘비선형’ 회귀 모델로 구분됩니다.
+    + https://danbi-ncsoft.github.io/study/2018/05/04/study-regression_model_summary.html
+    
   + Linear regression
   
-  + 다중 선형회귀 : 여러개 독립변수 (X1,...,Xn) 다른 가중치(W1,...Wn) , 여러개의 종속변수 (Y1,...,Yn)
-  + http://piramvill2.org/?p=3224&
+    + 다중 선형회귀 : 여러개 독립변수 (X1,...,Xn) 다른 가중치(W1,...Wn) , 여러개의 종속변수 (Y1,...,Yn)
+    + http://piramvill2.org/?p=3224&
   
   + how to ? : 모든 W1...Wn에 대해서 편미분 진행 
     + variable와 같은 갯수 equations 생성   
@@ -54,9 +59,10 @@
     
     + Y : 반응변수 벡터 (n*1) 
     + X : 설명변수 행렬 (n * (p+1)) 
-    + B : 회귀계수 벡터 ((p+1) * 1)
     + e : 잔차 벡터 (n*1)
-  
+    
+    + + B : 회귀계수 벡터 ((p+1) * 1)
+    
   + Argmin |F(x)-y|    
       + F(X) = W0 + W1X1 + W2X2 + ... + WnXn  
       + W vector (W0,W1,W2....Wn) 찾기   
