@@ -371,8 +371,8 @@
  
    + A,B,Pi 
     + 1. Forward & Backward
-      + 
+      + https://ratsgo.github.io/speechbook/docs/am/hmm
     + 2. Viterbi 알고리즘
       + 
     + 3. Baul Welch 알고리즘 
-      + 
+      + https://ratsgo.github.io/speechbook/docs/am/baumwelch
