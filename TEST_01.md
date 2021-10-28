@@ -230,6 +230,7 @@
   + data X -> O(x) 로 변경 (예시 Xt*X -> O(X)t * O(x) 로 변형)
 
 + Kernel trick
++ https://ratsgo.github.io/machine%20learning/2017/05/30/SVM3/
   + 커널을 이용하여 mapping = inner product 줄이기? 
     + (x1*x2+1)^3 으로 간단하게 표헌가능 !
   + 간단하게 만드는 커널 Transform 형태 (연산수 줄이기)    
