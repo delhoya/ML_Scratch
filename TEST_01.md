@@ -237,6 +237,7 @@
 
 + 의사 결정 나무 모델
   + 장점 : IF / Then Rule 생성 가능 
+  + https://ratsgo.github.io/machine%20learning/2017/03/26/tree/
   
   + 예측 나무 모델 : 데이터가 왔을때 Y 값을 예측하는 것
     + 하나의 Root 에서 끝마디 개수 X1, X2..Xn 로 나뉘어지는 사각형 영역으로 분류
