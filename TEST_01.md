@@ -48,7 +48,7 @@
   
   + Regression Model :
     + 회귀 모델에서 우리가 추정해야 하는 미지수는 독립 변수나 종속 변수가 아니라 회귀 계수 
-    + 회귀 모델은 모델링 대상을 회귀 계수의 선형 결합만으로 표현할 것인지 여부에 따라 ‘선형’ 회귀 모델과 ‘비선형’ 회귀 모델로 구분됩니다.
+    + 모델링 대상을 회귀 계수의 선형 결합만으로 표현 가능 ?‘선형’ 회귀 모델과 ‘비선형’ 회귀 모델로 구분됩니다.
     + https://danbi-ncsoft.github.io/study/2018/05/04/study-regression_model_summary.html
     
   + Linear regression
@@ -206,7 +206,7 @@
         + case2 ,case3 case4 ... 에 따라서 case 별로 대입해보기 
 
 + Dual form SVM
-  
+  + https://ratsgo.github.io/machine%20learning/2017/05/23/SVM/
   + L(W,b,a)
  
   + 식 0.5w*wt 에서
