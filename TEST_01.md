@@ -318,6 +318,7 @@
   
   + Kmeans
     + Unsupervised 
+    + https://ratsgo.github.io/machine%20learning/2017/04/19/KC/
   
   + Gaussian Mixture
     + Randomly choose one of Gaussians, and generate a data
