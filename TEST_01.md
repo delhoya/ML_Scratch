@@ -5,6 +5,7 @@
 + 1주차 강의 
   
   + K Nearest neighbors : 
+  + https://ratsgo.github.io/machine%20learning/2017/04/17/KNN/
     + 특징
       + Distance 기반 (Instance-based learning) 
       + Instance-based : 관측치만을 이용하여 새로운 데이터 예측
