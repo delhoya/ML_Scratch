@@ -126,6 +126,7 @@
       + Probability with the strongest assumption on independence 
       + 조건부 확률 계산
         + https://gomguard.tistory.com/69  
+        + https://ratsgo.github.io/machine%20learning/2017/05/18/naive/
 
     
 + 4주차 강의 
