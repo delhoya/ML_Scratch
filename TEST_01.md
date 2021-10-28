@@ -27,14 +27,12 @@
         + 1.  W(x) 함수 디자인 , 거리반비례 : 1/distance(x1,x2)
         + 2.  Exponential 함수 이용   
         + 3.  커널 리그레션 : 가우시안 분포 적용 (?!)
-        + https://data-science-hi.tistory.com/64
          
     + Distance Measure
       + kNN 의 거리를 어떤식으로 정의? 
         + 공간정의에 따라 달라짐
         + 유클리안 거리 : 공간의 span에 따라 거리가 달라질수있음
         + 다른 거리 측정법? : 코사인 유사도 , 피어슨 correlation .., etc 
-        + https://dive-into-ds.tistory.com/46
          
     + 생각 해볼 것
       + Which k is better?
