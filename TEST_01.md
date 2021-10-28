@@ -315,6 +315,7 @@
 
 + 7주차 
 + Clustering 
+  + https://ratsgo.github.io/machine%20learning/2017/04/16/clustering/
   
   + Kmeans
     + Unsupervised 
