@@ -325,6 +325,7 @@
   
 + 8주차
   + PCA
+  + https://ratsgo.github.io/machine%20learning/2017/04/24/PCA/
     + Covariance Matrix : 대칭행렬 (Symmetric matrix) 
       + 데이터의 분포 유추 가능  
       + Diagonal : 원형 (모든 영향이 같음 = 원)
