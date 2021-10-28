@@ -98,6 +98,7 @@
 + 3주차 강의 
   + Square mean error vs Maximizes the probability 
   + https://ratsgo.github.io/machine%20learning/2017/07/03/regression/
+  + https://ratsgo.github.io/machine%20learning/2017/05/22/RLR/
   
   + Maximum likelyhood : (MLE) 
     +  데이터 D 가 가장 fit (maximize) 확률?
@@ -105,8 +106,9 @@
         + Noise 가 정규분포를 띈다고 가정?   
         + Y와 X는 확률 곱 법칙으로 분리가능 
         + X 와 w,s 는 독립이다 (Conditional proabability) (chain rule 적용)  
-        + 최종적으로 SLE와 MLE 는 같음 
+        + 최종적으로 SLE와 MLE 는 같음 (정규분포 가정시)
         + https://ko.d2l.ai/chapter_deep-learning-basics/linear-regression.html
+        + https://ratsgo.github.io/deep%20learning/2017/09/24/loss/
   
   + Logisitic regression 
         
