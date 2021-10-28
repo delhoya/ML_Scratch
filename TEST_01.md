@@ -97,6 +97,7 @@
 
 + 3주차 강의 
   + Square mean error vs Maximizes the probability 
+  + https://ratsgo.github.io/machine%20learning/2017/07/03/regression/
   
   + Maximum likelyhood : (MLE) 
     +  데이터 D 가 가장 fit (maximize) 확률?
