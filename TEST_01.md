@@ -370,9 +370,9 @@
         + Learning or estimation  (A,B Pi 를 어떤식으로 학습을 하는가?)
  
    + A,B,Pi 
-    + 1. Forward & Backward
-      + https://ratsgo.github.io/speechbook/docs/am/hmm
-    + 2. Viterbi 알고리즘
-      + 
-    + 3. Baul Welch 알고리즘 
-      + https://ratsgo.github.io/speechbook/docs/am/baumwelch
+     + 1. Forward & Backward
+       + https://ratsgo.github.io/speechbook/docs/am/hmm
+     + 2. Viterbi 알고리즘
+       + pass
+     + 3. Baul Welch 알고리즘 
+       + https://ratsgo.github.io/speechbook/docs/am/baumwelch
