@@ -174,6 +174,7 @@
   
 + 결과 정리 : kkt multiplier 수에 따라서 최악에는 2^p 의 subproblem 이 있을 수 있음 
 
+---
 
 + Support Vector Machine
   + 직선을 하나 그려서 Boundary 를 지정하고 싶다. 어떤식으로 선을 그어야 할까?
