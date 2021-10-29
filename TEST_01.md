@@ -210,18 +210,16 @@
 
 + Dual form SVM
   + https://ratsgo.github.io/machine%20learning/2017/05/23/SVM/
-  + L(W,b,a)
- 
-  + 식 0.5w*wt 에서
-    + L(w,b,a)를 w에 대한 미분식 sigma (a_i * y_i * x_i)대입
+  
+  + 함수 L(W,b,a) 첫번째 항 0.5w*wt 
+    + L(w,b,a)를 w에 대한 미분식 sigma (a_i * y_i * x_i) 대입
       + 변형된 식 0.5*sigma_sigma(a_i*a_j*y_i*y_j*x*x_transpose)
       
-  + Constraint 식 a_i(y_i(w_t*x_i+b)-1) 에서 
-    + L(w,b,a) 를 b에 대한 미분식 sigma (a_i*y_i) = 0     
-    + L(w,b,a) 를 w에 대한 미분식 w = sigma (a_i*y_i*x_i) 
-      + 변형된 식 -sigma_sigma(a_i*a_j*y_i*y_j*x*x_transpose) + sigma a_i
+  + 함수 L(W,b,a) 두번째 항 a_i(y_i(w_t*x_i+b)-1)  
+    + L(w,b,a) 를 b에 대한 미분식 sigma (a_i*y_i) = 0 대입   
   
-  + 이제 a만 구하면 되는 dual form 으로 변형 완성
+  + 변형된 최종식 -sigma_sigma(a_i*a_j*y_i*y_j*x*x_transpose) + sigma a_i
+    + 이제 a만 구하면 되는 dual form 으로 변형 완성
 
 + Soft-Margin SVM
   + 0.5|w|^2 + C*sigma ksi
