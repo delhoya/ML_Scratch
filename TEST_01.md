@@ -127,7 +127,10 @@
       + 로그 - 우도함수 (log likelywood function) 
       + 입력변수 1 단위 증가할때 log(odds) 의 변화량 
       + 회귀계수 W에 대해 미분 적용 
-           
+    
+    + SGD 이용
+      + https://wikidocs.net/4289
+      
 + Naïve Bayesian
     
   + Naïve Bayesian Classifier
