@@ -26,7 +26,7 @@
     + variation
       + 단순하게 하지말고 거리까지 고려할 필요가 있지 않을까?  (Not just counting)
       + 거리에 따른 가중치 W(x) 적용 , 함수 디자인 
-        + 1.  W(x) 함수 디자인 , 거리반비례 : 1/distance(x1,x2)
+        + 1.  W(x) 함수 디자인 , 거리 반비례 : 1/distance(x1,x2)
         + 2.  Exponential 함수 이용   
         + 3.  커널 리그레션 : 가우시안 분포 적용 (?!)
          
@@ -50,31 +50,31 @@
 + 2주차 강의  
   
   + Regression Model :
-    + 회귀 모델: 추정해야 하는 미지수는 독립 변수나 종속 변수가 아니라 회귀 계수 
-    + 모델링 대상:  회귀 계수의 선형 결합만으로 표현 가능 ? ‘선형’ 회귀 모델 vs '비선형’ 회귀 모델
+    + 회귀 모델 : 추정 해야 하는 미지수 ? : 독립 변수 or 종속 변수 (X) 회귀 계수 (O) 
+    + 결합 형태 : 회귀 계수의 결합 형태 ? : 선형 회귀 or 비선형 회귀
     + https://danbi-ncsoft.github.io/study/2018/05/04/study-regression_model_summary.html
     
   + Linear regression  
-    + 다중 선형회귀 : 여러개 독립변수 (X1,...,Xn) 다른 가중치(W1,...Wn) , 여러개의 종속변수 (Y1,...,Yn)
+    + 다중 선형회귀 : 독립변수 (X1,...,Xn) 회귀계수(W0,W1,...Wp) , 종속변수 (Y1,...,Yn) 잔차항 (E1,...,En)
     
   + how to ? 
-    + 모든 W1...Wn에 대해서 편미분 진행 
+    + 모든 회귀계수 W1...Wn에 대해서 편미분 진행 
     + variable와 같은 갯수 equations 생성   
   
   + solve ? 
     + http://piramvill2.org/?p=3224&
    
-    + Y : 반응변수 벡터 (n*1) 
+    + Y : 반응변수 벡터 (n * 1) 
     + X : 설명변수 행렬 (n * (p+1)) 
-    + e : 잔차 벡터 (n*1)
+    + e : 잔차 벡터 (n * 1)
     
-    + B : 회귀계수 벡터 ((p+1) * 1)
+    + W : 회귀계수 벡터 ((p+1) * 1)
     
     + Argmin |F(x)-y|    
       + MSE(Mean Squared Error) / least squares regression
       + (F(x)-y)^2 
  
-  + 최소제곱법의 추정  
+  + 최소 제곱법의 추정  
     + w = (XtX) -1 * (XtY)  
       + https://mazdah.tistory.com/831  
   
@@ -86,9 +86,11 @@
       + X : Kernel Trick mapping  
       + https://analysisbugs.tistory.com/163   
   
-  + Another solving : Gradient descendant , Maximum likelyhood
-    + https://ratsgo.github.io/machine%20learning/2017/07/03/regression/  
-    + https://ko.d2l.ai/chapter_deep-learning-basics/linear-regression.html
+  + Another solving : Stochastic Gradient Descnet , Maximum Likelyhood Estimation
+    + SGD
+      + https://ratsgo.github.io/machine%20learning/2017/07/03/regression/  
+    + MLE
+      + https://ko.d2l.ai/chapter_deep-learning-basics/linear-regression.html
   
   + Model analysis: 
     + 1. Overfitting vs Generalization   
