@@ -111,7 +111,7 @@
         + 오차항 E (Noise) 가 정규분포를 띈다고 가정?   
         + Y와 X는 확률 곱 법칙으로 분리가능 
         + X 와 w,s 는 독립이다 (Conditional proabability) (chain rule 적용)  
-        + 최종적으로 SLE와 MLE 는 같음 (정규분포 가정시)
+        + 최종적으로 MSE와 MLE 는 같음 (정규분포 가정시)
         + https://ratsgo.github.io/deep%20learning/2017/09/24/loss/
   
   + Logisitic regression 
