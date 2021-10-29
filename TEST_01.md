@@ -101,7 +101,7 @@
       + https://deep-learning-study.tistory.com/623
 
 + 3주차 강의 
-  + Square mean error vs Maximizes the probability 
+  + Mean square error vs Maximizes likelyhood estimation
     + https://ratsgo.github.io/machine%20learning/2017/05/22/RLR/
   
   + Maximum likelyhood Estimation : (MLE) 
