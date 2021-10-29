@@ -135,10 +135,6 @@
 
 + 4주차 강의 
 
-  
-+ Constrained(제한적조건) Optimization (for SVM)
-+ SVM (Support vector machine) + Kernel 
-
 + Constrained Optimizaion (제한된 조건에서의 최적화)
   + min f(x) =?  
   + when g(x) = 0 and h(x) <= 0     
@@ -147,6 +143,7 @@
   + F(x,a,b) = f(x) + sum(a*g(x)) + sum(b*h(x))   
   + min x / max a,b
   + a: Lagrange multiplier(equal constraint) /  b : kkt multiplier(inequal constraint)
+
 + 만족하는 식
   + F(x,a,b) 미분값 = 0  
   + g(x) = 0
@@ -210,6 +207,7 @@
         + case1 a1 = 0 a2 = 0  
         + case2 ,case3 case4 ... 에 따라서 case 별로 대입해보기 
 
+
 + Dual form SVM
   + https://ratsgo.github.io/machine%20learning/2017/05/23/SVM/
   + L(W,b,a)
@@ -235,7 +233,7 @@
   + data X -> O(x) 로 변경 (예시 Xt*X -> O(X)t * O(x) 로 변형)
 
 + Kernel trick
-+ https://ratsgo.github.io/machine%20learning/2017/05/30/SVM3/
+  + https://ratsgo.github.io/machine%20learning/2017/05/30/SVM3/
   + 커널을 이용하여 mapping = inner product 줄이기? 
     + (x1*x2+1)^3 으로 간단하게 표헌가능 !
   + 간단하게 만드는 커널 Transform 형태 (연산수 줄이기)    
