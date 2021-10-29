@@ -57,10 +57,11 @@
   + Linear regression  
     + 다중 선형회귀 : 여러개 독립변수 (X1,...,Xn) 다른 가중치(W1,...Wn) , 여러개의 종속변수 (Y1,...,Yn)
     
-  + how to ? : 모든 W1...Wn에 대해서 편미분 진행 
+  + how to ? 
+    + 모든 W1...Wn에 대해서 편미분 진행 
     + variable와 같은 갯수 equations 생성   
   
-  + solve ? : 
+  + solve ? 
     + http://piramvill2.org/?p=3224&
    
     + Y : 반응변수 벡터 (n*1) 
@@ -69,18 +70,18 @@
     
     + B : 회귀계수 벡터 ((p+1) * 1)
     
-  + Argmin |F(x)-y|    
-    + MSE(Mean Squared Error) / least squares regression
-    + (F(x)-y)^2 
+    + Argmin |F(x)-y|    
+      + MSE(Mean Squared Error) / least squares regression
+      + (F(x)-y)^2 
  
   + 최소제곱법의 추정  
     + w = (XtX) -1 * (XtY)  
       + https://mazdah.tistory.com/831  
   
-    + 다중 선형회귀 (정규방정식)
+  + 다중 선형회귀 (정규방정식)
       + https://jangpiano-science.tistory.com/111
     
-    + kernel regression matrix (일반화) 
+  + kernel regression matrix (일반화) 
       + (XtX) -1 가 존재하지 않을때 계산이 불가능한 단점
       + X : Kernel Trick mapping  
       + https://analysisbugs.tistory.com/163   
