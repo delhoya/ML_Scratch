@@ -99,7 +99,7 @@
 
 + 3주차 강의 
   + Square mean error vs Maximizes the probability 
-  + https://ratsgo.github.io/machine%20learning/2017/05/22/RLR/
+    + https://ratsgo.github.io/machine%20learning/2017/05/22/RLR/
   
   + Maximum likelyhood : (MLE) 
     +  데이터 D 가 가장 fit (maximize) 확률?
@@ -114,6 +114,7 @@
         
     + 함수 
       + Sigmoid fuction : 나오는 값 0 ~ 1 사이 (확률값을 Regression 하려는 용도) 
+    
     + 오즈비 
       + 승산 (성공확률 P / 실패확률 1-P) 
   
@@ -122,14 +123,13 @@
       + 로그 - 우도함수 (log likelywood function) 
       + 입력변수 1 단위 증가할때 log(odds) 의 변화량 
       + 회귀계수 W에 대해 미분 적용 
-      
-     
-  + Naïve Bayesian
+           
++ Naïve Bayesian
     
-    + Naïve Bayesian Classifier
-      + Probability with the strongest assumption on independence 
-      + 조건부 확률 계산
-        + https://ratsgo.github.io/machine%20learning/2017/05/18/naive/
+  + Naïve Bayesian Classifier
+    + Probability with the strongest assumption on independence 
+    + 조건부 확률 계산
+    + https://ratsgo.github.io/machine%20learning/2017/05/18/naive/
 
 ---
 
