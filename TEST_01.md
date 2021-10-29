@@ -1,7 +1,7 @@
 + 기초 행렬 연산 
   + https://ratsgo.github.io/linear%20algebra/2017/03/14/operations/
 
-======================
+---
 
 
 + 1주차 강의 
