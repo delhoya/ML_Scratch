@@ -71,7 +71,7 @@
     + W : 회귀계수 벡터 ((p+1) * 1)
     
     + Argmin |F(x)-y|    
-      + MSE(Mean Squared Error) / least squares regression
+      + MSE(Mean Squared Error) 
       + (F(x)-y)^2 
  
   + 최소 제곱법의 추정  
@@ -92,7 +92,7 @@
       + https://ratsgo.github.io/machine%20learning/2017/07/03/regression/  
     + MLE
       + https://ko.d2l.ai/chapter_deep-learning-basics/linear-regression.html
-  
+    
   + Model analysis: 
     + 1. Overfitting vs Generalization   
     + 2. evaluation : Training set and Test set 
@@ -104,10 +104,11 @@
   + Square mean error vs Maximizes the probability 
     + https://ratsgo.github.io/machine%20learning/2017/05/22/RLR/
   
-  + Maximum likelyhood : (MLE) 
-    +  데이터 D 가 가장 fit (maximize) 확률?
-    +  weight 와 Standard Deviation 이 주어질 때 데이터(D)의 X,Y 좌표 : P(x,y|w,s)
-        + Noise 가 정규분포를 띈다고 가정?   
+  + Maximum likelyhood Estimation : (MLE) 
+    +  회귀계수 (weight) 와 (Standard Deviation) 주어질 때 데이터(D)의 X,Y 좌표 : P(D(x,y)|w,s)
+    +  데이터 D(x,y) 가 가장 fit (maximize) 확률?
+
+        + 오차항 E (Noise) 가 정규분포를 띈다고 가정?   
         + Y와 X는 확률 곱 법칙으로 분리가능 
         + X 와 w,s 는 독립이다 (Conditional proabability) (chain rule 적용)  
         + 최종적으로 SLE와 MLE 는 같음 (정규분포 가정시)
