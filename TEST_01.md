@@ -45,7 +45,7 @@
         + Depending on the data
         + Use Cross-validation
  
- ***
+ ---
  
 + 2주차 강의  
   
@@ -130,7 +130,8 @@
       + 조건부 확률 계산
         + https://ratsgo.github.io/machine%20learning/2017/05/18/naive/
 
-    
+---
+
 + 4주차 강의 
 
   
@@ -240,6 +241,8 @@
   + 커널은 뭐가 될수있어?
     + Mercer's condition 만족  
 
+---
+
 6주차 - 10/4(월) 
 
 + 의사 결정 나무 모델
@@ -315,6 +318,7 @@
 
 + 중요 변수 선택
 
+---
 
 + 7주차 
 + Clustering 
@@ -327,7 +331,9 @@
     + https://ratsgo.github.io/machine%20learning/2017/04/18/HC/
   + Gaussian Mixture
     + Randomly choose one of Gaussians, and generate a data
-  
+ 
+---
+ 
 + 8주차
   + PCA
   + https://ratsgo.github.io/machine%20learning/2017/04/24/PCA/
@@ -358,7 +364,9 @@
       + Z1 = e(1)X = e11*x1 + e12*x2 + ...
       + Z2 = e(2)X = e21*x1 + e22*x2 + ...
       + ...  
-   
+ 
+ ---
+ 
   + HMM 
     + Class A and Class B : 2개의 Sequence 가 있을 때 사용하는 모델 
       
