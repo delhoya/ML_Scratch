@@ -57,16 +57,16 @@
     + variable와 같은 갯수 equations 생성   
   
   + solve ? : 
-    + + http://piramvill2.org/?p=3224&
+    + http://piramvill2.org/?p=3224&
    
     + Y : 반응변수 벡터 (n*1) 
     + X : 설명변수 행렬 (n * (p+1)) 
     + e : 잔차 벡터 (n*1)
     
-    + + B : 회귀계수 벡터 ((p+1) * 1)
+    + B : 회귀계수 벡터 ((p+1) * 1)
     
   + Argmin |F(x)-y|    
-    + MSE(Mean Squared Error)
+    + MSE(Mean Squared Error) / least squares regression
     + (F(x)-y)^2 
  
   + 최소제곱법의 추정  
@@ -83,6 +83,7 @@
   
   + Another solving : Gradient descendant , Maximum likelyhood
     + https://ratsgo.github.io/machine%20learning/2017/07/03/regression/  
+    + https://ko.d2l.ai/chapter_deep-learning-basics/linear-regression.html
   
   + Model analysis: 
     + 1. Overfitting vs Generalization   
@@ -102,7 +103,6 @@
         + Y와 X는 확률 곱 법칙으로 분리가능 
         + X 와 w,s 는 독립이다 (Conditional proabability) (chain rule 적용)  
         + 최종적으로 SLE와 MLE 는 같음 (정규분포 가정시)
-        + https://ko.d2l.ai/chapter_deep-learning-basics/linear-regression.html
         + https://ratsgo.github.io/deep%20learning/2017/09/24/loss/
   
   + Logisitic regression 
