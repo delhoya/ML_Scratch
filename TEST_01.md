@@ -42,7 +42,9 @@
       + Proper choice of k
         + Depending on the data
         + Use Cross-validation
-        
+ 
+ ***
+ 
 + 2주차 강의  
   
   + Regression Model :
